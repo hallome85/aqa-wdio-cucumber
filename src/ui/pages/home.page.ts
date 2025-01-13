@@ -5,8 +5,7 @@ class HomePage extends SalesPortalPage {
   readonly ["Menu Button"] = (menuItemName: MenuItemNames) => `[name="${menuItemName}"]`;
   readonly ["Welcome label"] = ".welcome-text";
   readonly ["Logged User label"] = "strong";
-  readonly ["Sign out"] = "signOut";
-  async clickOnMenuButton(menuItemName: MenuItemNames) {
+   async clickOnMenuButton(menuItemName: MenuItemNames) {
     await this.click(this["Menu Button"](menuItemName));
   }
 
