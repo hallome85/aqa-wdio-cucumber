@@ -57,3 +57,8 @@ When(/^I select "([^"]*)" in "([^"]*)" on "([^"]*)" page$/, async function (valu
   await pages[page].selectDropdownValue(pages[page][element], value);
 });
 
+Then( /^I have to log out from "([^"]*)" page$/,
+  async function (page: string) {
+    await pages[page].deleteCookies(["Authorization"]);
+  }
+);

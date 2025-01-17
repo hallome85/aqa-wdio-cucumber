@@ -22,6 +22,8 @@ Feature: [UI] [Create Product] [Positive]
     And I click on "Save Product button" on "Add New Product" page
     Then I wait that "Products List" page is loaded
     And I should see notification contains text "Product was successfully created" on "Products List" page
+    And I have to log out from "Products List" page
+
     # When I click on "Home" on "Products List" page 
     # Then I wait that "Home" page is loaded
     # When I select "Sign out" in "Logged User label" on "Home" page
